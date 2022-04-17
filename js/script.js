@@ -13,6 +13,9 @@ setInterval(function () {
   if (hours > 12) {
     hours ="0" + (hours - 12);
   }
+    if ((hours = 10 || 11 || 12)) {
+    hours = hours;
+  }
   if (minuets < 10) {
     minuets ="0" + minuets;
   }
