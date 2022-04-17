@@ -10,11 +10,8 @@ setInterval(function () {
   var hours = tte.getHours();
   var minuets = tte.getMinutes();
   var secands = tte.getSeconds();
-  if (hours > 12) {
-    hours ="0" + (hours - 12);
-  }
-    if ((hours = 10 || 11 || 12)) {
-    hours = hours;
+  if (hours < 10) {
+    hours = "0" + hours ;
   }
   if (minuets < 10) {
     minuets ="0" + minuets;
